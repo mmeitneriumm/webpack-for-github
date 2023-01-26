@@ -1,0 +1,29 @@
+{
+  "name": "webpack-for-github",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "scripts": {
+    "test": " ",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmeitneriumm/webpack-for-github.git"
+  },
+  "keywords": [
+    "javascript",
+    "webpack"
+  ],
+  "author": "Mary Storm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmeitneriumm/webpack-for-github/issues"
+  },
+  "homepage": "https://github.com/mmeitneriumm/webpack-for-github#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  }
+}
