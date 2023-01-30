@@ -7,7 +7,7 @@
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
     "watch": "webpack --mode development --watch",
-    "start" : "webpack serve --mode development"
+    "start": "webpack serve --mode development"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,7 @@
   "homepage": "https://github.com/mmeitneriumm/webpack-for-github#readme",
   "devDependencies": {
     "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.3",
     "csv-loader": "^3.0.5",
     "file-loader": "^6.2.0",
