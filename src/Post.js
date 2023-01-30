@@ -1,7 +1,8 @@
 // взято для примера
 export default class Post {
-    constructor(title){
+    constructor(title, img){
         this.title = title
+        this.img = img
         this.date = new Date()
     }
 
@@ -9,7 +10,12 @@ export default class Post {
         return JSON.stringify({
             title: this.title,
             date: this.date.toJSON(),
+            img: this.img
         }
         )
+    }
+
+    get uppercaseTitle(){
+        return this.title.toUpperCase()
     }
 }
