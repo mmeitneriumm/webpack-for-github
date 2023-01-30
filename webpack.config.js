@@ -23,7 +23,8 @@ module.exports = {
     optimization: {
         splitChunks: {
             chunks: 'all'
-        }
+        },
+        runtimeChunk: 'single'
     },
     plugins: [
         new HTMLWebpackPlugin({
@@ -43,7 +44,7 @@ module.exports = {
             },
             {
                 test: /\.(ttf|woff|woff2)$/,
-                use: 'file-loader'
+                use: 'asset/resource'
             },
             {
                 test: /\.xml$/,
@@ -54,5 +55,9 @@ module.exports = {
                 use: 'csv-loader'
             }
         ]
+    },
+    devServer: {
+        port: 3000,
+        liveReload: true
     }
 }
