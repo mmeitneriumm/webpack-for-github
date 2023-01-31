@@ -5,6 +5,7 @@ import json from '@assets/test.json'
 import uplabLogo from '@assets/uplab-logo.jpg'
 import xml from '@assets/plant_catalog.xml'
 import csv from '@assets/example.csv'
+import "./styles/less.less"
 
 const post = new Post('title', uplabLogo)
 

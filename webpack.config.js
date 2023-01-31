@@ -90,7 +90,15 @@ module.exports = {
             {
                 test: /\.csv$/,
                 use: 'csv-loader'
-            }
+            },
+            {
+                test: /\.less$/,
+                use: [{
+                    loader: MiniCssExtractPlugin.loader,
+                }, 
+                'css-loader',
+                'less-loader']
+            },
         ]
     },
     devServer: {
