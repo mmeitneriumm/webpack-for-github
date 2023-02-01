@@ -112,6 +112,16 @@ module.exports = {
                 test: /\.s[ac]ss$/,
                 use: cssLoaders('sass-loader')
             },
+            {
+                test: /\.m?js$/,
+                exclude: /node_modules/,
+                use: {
+                  loader: "babel-loader",
+                  options: {
+                    presets: ['@babel/preset-env']
+                  }
+                }
+              }
         ]
     },
     devServer: {
